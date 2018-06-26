@@ -6,6 +6,7 @@ import router from './router'
 import Vuex from 'vuex'
 import store from './vuex/store.js'
 import '../static/font/iconfont.css'
+import '../static/css/base.css'
 
 Vue.use(Vuex)
 Vue.config.productionTip = false
