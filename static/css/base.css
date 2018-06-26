@@ -56,6 +56,12 @@ s,i,em{font-style:normal;text-decoration:none;}
 body{
     overflow-x: hidden;
 }
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
 
 
 
