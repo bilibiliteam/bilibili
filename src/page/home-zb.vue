@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="page">
         <homeheader />
         <tabNav />
         <homeBanner />
@@ -19,4 +19,10 @@
     }
 </script>
 
-<style scoped></style>
+<style scoped>
+    .page{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
