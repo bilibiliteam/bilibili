@@ -33,7 +33,7 @@ export default {
               autoplay: 5000,
               paginationClickable: true,
               autoplayDisableOninteraction:false
-          });
+          })
       }, 1000)
   }
 
@@ -45,6 +45,7 @@ export default {
 <style scoped>
     .swiper-container{
         /* margin-top: 50px; */
+        width: 100%;
         height: 150px;
         background: #cccccc;
     }
