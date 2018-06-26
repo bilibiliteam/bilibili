@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import Swiper from 'swiper'
 export default {
   data () {
     return {
