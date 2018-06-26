@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import xIndex from '@/components/xIndex/xIndex'
+
+import homeZb from '../page/home-zb'
 
 Vue.use(Router)
 
@@ -8,7 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: xIndex
+      name: 'homeZb',
+      component: homeZb
     }
   ]
 })
