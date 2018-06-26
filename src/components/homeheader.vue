@@ -1,25 +1,23 @@
 <template>
-    <div class="page">
-        <div class="home-header">
-            <div class="my">
-                <i class="iconfont icon-caidan caidan"></i>
-                <div class="head-portrait">
-                    <img src="../../static/imgs/noface.gif" />
-                </div>
+    <div class="home-header">
+        <div class="my">
+            <i class="iconfont icon-caidan caidan"></i>
+            <div class="head-portrait">
+                <img src="../../static/imgs/noface.gif" />
             </div>
-            <div class="search">
-                <i class="iconfont icon-fangdajing"></i>
-                <input type="text" />
-            </div>
-            <div class="game">
-                <i class="iconfont icon-94"></i>
-            </div>
-            <div class="download">
-                <i class="iconfont icon-xiazai"></i>
-            </div>
-            <div class="message">
-                <i class="iconfont icon-liuyan"></i>
-            </div>
+        </div>
+        <div class="search">
+            <i class="iconfont icon-fangdajing"></i>
+            <input type="text" />
+        </div>
+        <div class="game">
+            <i class="iconfont icon-94"></i>
+        </div>
+        <div class="download">
+            <i class="iconfont icon-xiazai"></i>
+        </div>
+        <div class="message">
+            <i class="iconfont icon-liuyan"></i>
         </div>
     </div>
 </template>
@@ -31,7 +29,7 @@
 <style scoped>
     .home-header{
         display: flex;
-        height: 60px;
+        height: 10%;
         justify-content: space-between;
         padding-top: 20px;
         background: #f15c8d;
