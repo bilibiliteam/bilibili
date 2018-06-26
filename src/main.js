@@ -8,6 +8,10 @@ import store from './vuex/store.js'
 import '../static/font/iconfont.css'
 import '../static/css/base.css'
 import '../static/font/iconfont.js'
+import MuseUI from 'muse-ui';
+import 'muse-ui/dist/muse-ui.css';
+
+Vue.use(MuseUI);
 
 Vue.use(Vuex)
 Vue.config.productionTip = false
