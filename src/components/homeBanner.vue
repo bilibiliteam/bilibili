@@ -34,7 +34,7 @@ export default {
               paginationClickable: true,
               autoplayDisableOninteraction:false
           })
-      }, 1000)
+      }, 5000)
   }
 
 
@@ -56,5 +56,5 @@ export default {
     .swiper-slide img{
         width: 100%;
         height: 100%;
-    } 
+    }
 </style>
