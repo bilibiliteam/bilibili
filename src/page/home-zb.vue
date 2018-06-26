@@ -1,17 +1,17 @@
 <template>
     <div class="page">
         <homeheader />
-
-
-
+        <homeBanner />
     </div>
 </template>
 
 <script>
     import homeheader from '../components/homeheader'
+    import homeBanner from '../components/homeBanner'
     export default {
         components: {
-            homeheader
+            homeheader,
+            homeBanner
         }
     }
 </script>
