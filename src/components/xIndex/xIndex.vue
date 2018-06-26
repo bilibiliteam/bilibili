@@ -1,18 +1,22 @@
 <template>
-    <div id="xIndex">
-      <span>头像</span><span></span><span></span><span></span><span></span>
-    </div>
+  <div>
+    <xIndexBottom></xIndexBottom>
+    <xIndexCommon></xIndexCommon>
+  </div>
+
 </template>
 
 <script>
+  import xIndexBottom from './xIndexBottom'
+  import xIndexCommon from './xIndexCommon'
     export default {
-        name: ""
+        components:{
+          xIndexBottom,
+          xIndexCommon
+        }
     }
 </script>
 
-<style scoped lang="scss">
-#xIndex{
-  display:flex;
-  height:50px;
-}
+<style scoped>
+
 </style>
