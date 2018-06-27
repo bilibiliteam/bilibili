@@ -158,6 +158,7 @@
         display: flex;
         z-index: 6666;
         transition: left 0.2s linear;
+        font-size: 12px;
     }
     .siderbar .leftCon{
         width: 80%;
@@ -199,7 +200,6 @@
         display: flex;
         justify-content: space-around;
         border-bottom: 1px solid #aaa;
-        font-size: 16px;
         color: #333;
     }
     .siderbar .leftCon .siderbar-nav .tabList{
@@ -233,7 +233,6 @@
         height: 14%;
         display: flex;
         align-items: center;
-        font-size: 16px;
     }
     .siderbar .leftCon .list .lists0 .li .iconfont{
         font-size: 22px;
@@ -257,12 +256,11 @@
         display: flex;
         justify-content: space-around;
         border-top: 1px solid #aaa;
-        font-size: 16px;
         color: #333;
         line-height: 24px;
     }
     .siderbar .leftCon .bottom .btmList{
-        width: 22%;
+        width: 20%;
         display: flex;
         justify-content: space-between;
         align-items: center;
