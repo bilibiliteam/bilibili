@@ -25,6 +25,9 @@
             tabNav,
             homeBanner,
             siderBar
+        },
+        mounted(){
+          this.$store.state.idxLight = 0;
         }
     }
 

@@ -1,6 +1,6 @@
 <template>
     <div class="vip-header">
-        <div class="vip-header-left">
+        <div class="vip-header-left" @click="showSider">
             <i class="iconfont icon-caidan caidan"></i>
             <div class="head-portrait">
                 <img src="../../../static/imgs/noface.jpg" />
@@ -23,6 +23,11 @@
         data(){
             return {
                 
+            }
+        },
+        methods: {
+            showSider(){
+                this.$store.state.left = 0;
             }
         }
     }

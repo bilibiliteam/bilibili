@@ -178,6 +178,9 @@
         components:{
           homeHeader,
           xIndexBottom
+        },
+        mounted(){
+          this.$store.state.idxLight = 1;
         }
     }
 </script>

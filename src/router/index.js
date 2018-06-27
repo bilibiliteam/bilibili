@@ -5,6 +5,7 @@ import channel from '../page/channel-x'
 import liveStreaming from '../components/channel/liveStreaming'
 import vipshopping from '../page/vipshopping'
 import dongtai from '../page/dongtai'
+import goodsClass from '../page/vipPage/goodsClass'
 import tuijian from '../components/tuijian/tuijian'
 import zhibo from '../components/zhibo/zhibo'
 import zhuifan from '../components/zhuifan/zhuifan'
@@ -61,6 +62,11 @@ export default new Router({
       path: '/dongtai',
       name: 'dongtai',
       component: dongtai
+    },
+    {
+      path: '/goodsClass',
+      name: 'goodsClass',
+      component: goodsClass
     }
   ]
 })
