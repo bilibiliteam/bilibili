@@ -25,7 +25,7 @@
     }
 </script>
 
-<style scoped>
+<style>
   .indexFooter{
     position:fixed;
     bottom:0;

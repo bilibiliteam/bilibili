@@ -15,6 +15,7 @@
 
 <style scoped lang="scss">
 #xIndexBottom{
+  width:100%;
   align-items: center;
   display:flex;
   height:50px;
