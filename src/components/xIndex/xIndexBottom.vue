@@ -1,6 +1,6 @@
 <template>
     <div id="xIndexBottom" class="bg-fff">
-      <span v-for="(item,index) of xIndexBottomItem"  @click="changeIndex(index)" :class="{active:currentIndex===index}"><i :class="item.icon"></i><a :href="item.routerLink" v-text="item.name"></a></span>
+      <span v-for="(item,index) of xIndexBottomItem"  @click="changeIndex(index)" :class="{active:whoIdx===index}"><i :class="item.icon"></i><a :href="item.routerLink" v-text="item.name" :class="{active:whoIdx===index}"></a></span>
     </div>
 </template>
 
@@ -36,9 +36,13 @@
         },
         methods:{
             changeIndex(index){
-              this.currentIndex = index;
-              console.log(index,this.currentIndex)
+              this.$store.state.idxLight = index;
             }
+        },
+        computed:{
+          whoIdx(){
+            return this.$store.state.idxLight;
+          }
         }
     }
 </script>

@@ -5,6 +5,7 @@ import channel from '../page/channel-x'
 import liveStreaming from '../components/channel/liveStreaming'
 import vipshopping from '../page/vipshopping'
 import dongtai from '../page/dongtai'
+import goodsClass from '../page/vipPage/goodsClass'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/dongtai',
       name: 'dongtai',
       component: dongtai
+    },
+    {
+      path: '/goodsClass',
+      name: 'goodsClass',
+      component: goodsClass
     }
   ]
 })

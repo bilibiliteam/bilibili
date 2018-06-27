@@ -18,7 +18,7 @@
       <div class="dongtaiHeaderfooter">
         <xIndexBottom class="indexFooter"></xIndexBottom>
       </div>
-      
+      <siderBar />
       
       
     </div>
@@ -27,12 +27,17 @@
 <script>
 import dongtaiHeader from '../components/dongtai/dongtaiHeader'
 import xIndexBottom from '../components/xIndex/xIndexBottom'
+import siderBar from '../components/sidebar'
 
 export default {
     components: {
       dongtaiHeader,
-      xIndexBottom
-    }
+      xIndexBottom,
+      siderBar
+    },
+      mounted(){
+        this.$store.state.idxLight = 2;
+      }
 }
 </script>
 
