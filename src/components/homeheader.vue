@@ -40,7 +40,7 @@
 <style scoped>
     .home-header{
         display: flex;
-        height: 10%;
+        height: 60px;
         justify-content: space-between;
         padding-top: 20px;
         background: #f15c8d;
