@@ -2,8 +2,9 @@
     <div class="page">
       <homeheader />
       <tabNav />
-      <homeBanner />
-      <xIndexCommon></xIndexCommon>
+      <div class="home-body">
+        <router-view></router-view>
+      </div>
       <xIndexBottom class="indexFooter"></xIndexBottom>
       <siderBar />
     </div>
@@ -26,8 +27,9 @@
             siderBar
         }
     }
-</script>
 
+</script>
+  
 <style>
   .indexFooter{
     position:fixed;

@@ -5,6 +5,9 @@ import channel from '../page/channel-x'
 import liveStreaming from '../components/channel/liveStreaming'
 import vipshopping from '../page/vipshopping'
 import dongtai from '../page/dongtai'
+import tuijian from '../components/tuijian/tuijian'
+import zhibo from '../components/zhibo/zhibo'
+
 
 Vue.use(Router)
 
@@ -13,7 +16,24 @@ export default new Router({
     {
       path: '/',
       name: 'homeZb',
-      component: homeZb
+      component: homeZb,
+      children: [
+        {
+          path: '',
+          name: 'zhibo',
+          component: zhibo
+        },
+        {
+          path: 'zhibo',
+          name: 'zhibo',
+          component: zhibo
+        },
+        {
+          path: 'tuijian',
+          name: 'tuijian',
+          component: tuijian
+        },
+      ]
     },
     {
       path: '/channel',
