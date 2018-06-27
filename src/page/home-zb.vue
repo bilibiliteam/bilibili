@@ -25,14 +25,14 @@
     }
 </script>
 
-<style scoped>
+<style>
   .indexFooter{
     position:fixed;
     bottom:0;
     left:0;
     width: 100%;
   }
-    .page{
+  .page{
         height: 100%;
         display: flex;
         flex-direction: column;

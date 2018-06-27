@@ -13,6 +13,8 @@
 </template>
 
 <script>
+  import Swiper from 'swiper'
+  import '../../static/css/swiper.min.css'
 export default {
   data () {
     return {
@@ -30,7 +32,7 @@ export default {
           var swiperObj =  new Swiper('#swiper', {
               loop: true,
               pagination: '.swiper-pagination',
-              autoplay: 5000,
+              autoplay: 3000,
               paginationClickable: true,
               autoplayDisableOninteraction:false
           });

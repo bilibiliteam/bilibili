@@ -1,9 +1,9 @@
 <template>
     <div id="xIndexBottom" class="bg-fff">
-      <span><i class="iconfont icon-shouye"></i>首页</span>
-      <span><i class="iconfont icon-changyongfenlei"></i>频道</span>
-      <span><i class="iconfont icon-dongtaiweixuanzhong"></i>动态</span>
-      <span><i class="iconfont icon-gouwudai"></i>会员购</span>
+      <span><i class="iconfont icon-shouye"></i><a href="#/">首页</a></span>
+      <span><i class="iconfont icon-changyongfenlei"></i><a href="#/channel">频道</a></span>
+      <span><i class="iconfont icon-dongtaiweixuanzhong"></i><a href="">动态</a></span>
+      <span><i class="iconfont icon-gouwudai"></i><a href="">会员购</a></span>
     </div>
 </template>
 
@@ -18,15 +18,24 @@
   align-items: center;
   display:flex;
   height:50px;
+  bottom:0;
+  left:0;
+  width:100%;
+border-top:1px solid #eee;
   span{
     flex:1;
-    font-size: 12px;
     display: flex;
     flex-direction: column;
     text-align: center;
     color:#999;
+    a{
+          font-size: 12px;
+      color:#999;
+
+    }
     i{
       font-size: 20px;
+
     }
   }
 }

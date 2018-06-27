@@ -7,10 +7,13 @@ import '../static/css/swiper.min.css'
 import '../static/font/iconfont.css'
 import '../static/css/base.css'
 import '../static/font/iconfont.js'
+import Vuex from 'vuex'
+Vue.use(Vuex)
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,

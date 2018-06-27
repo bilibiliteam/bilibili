@@ -6,7 +6,7 @@
                 <img src="../../static/imgs/noface.gif" />
             </div>
         </div>
-        <div class="search">
+        <div class="search" >
             <i class="iconfont icon-fangdajing"></i>
             <input type="text" />
         </div>
@@ -23,7 +23,9 @@
 </template>
 
 <script>
-    
+    export default {
+
+    }
 </script>
 
 <style scoped>
