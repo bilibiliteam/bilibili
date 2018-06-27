@@ -66,6 +66,7 @@
                 }
                 p{
                     padding-left: 6%;
+                    line-height: 40px;
                 }
             }
         }
