@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import Swiper from 'swiper'
 export default {
   data () {
     return {
@@ -33,8 +34,8 @@ export default {
               autoplay: 5000,
               paginationClickable: true,
               autoplayDisableOninteraction:false
-          });
-      }, 1000)
+          })
+      }, 5000)
   }
 
 

@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import router from './router'
 import Swiper from 'swiper'
+import store from './store'
 import '../static/css/swiper.min.css'
 import '../static/font/iconfont.css'
 import '../static/css/base.css'
@@ -14,6 +15,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   template: `
     <router-view></router-view>
   `

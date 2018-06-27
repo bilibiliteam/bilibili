@@ -3,7 +3,7 @@
         <div class="vip-header-left">
             <i class="iconfont icon-caidan caidan"></i>
             <div class="head-portrait">
-                <img src="../../../static/imgs/noface.gif" />
+                <img src="../../../static/imgs/noface.jpg" />
             </div>
         </div>
         <div class="vip-header-center">

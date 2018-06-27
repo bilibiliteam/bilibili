@@ -1,9 +1,9 @@
 <template>
     <div class="home-header">
-        <div class="my">
+        <div class="my" @click="showSider">
             <i class="iconfont icon-caidan caidan"></i>
             <div class="head-portrait">
-                <img src="../../static/imgs/noface.gif" />
+                <img src="../../static/imgs/noface.jpg" />
             </div>
         </div>
         <div class="search">
@@ -23,7 +23,18 @@
 </template>
 
 <script>
-    
+    export default {
+        data () {
+            return {
+
+            }
+        },
+        methods: {
+            showSider(){
+                this.$store.state.left = 0;
+            }
+        }
+    }
 </script>
 
 <style scoped>

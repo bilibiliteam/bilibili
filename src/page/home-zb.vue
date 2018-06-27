@@ -5,6 +5,7 @@
       <homeBanner />
       <xIndexCommon></xIndexCommon>
       <xIndexBottom class="indexFooter"></xIndexBottom>
+      <siderBar />
     </div>
 </template>
 
@@ -14,13 +15,15 @@
     import xIndexCommon from '../components/xIndex/xIndexCommon'
     import homeBanner from '../components/homeBanner'
     import tabNav from '../components/tabNav'
+    import siderBar from '../components/sidebar'
     export default {
         components: {
             homeheader,
             xIndexBottom,
             xIndexCommon,
             tabNav,
-            homeBanner
+            homeBanner,
+            siderBar
         }
     }
 </script>
