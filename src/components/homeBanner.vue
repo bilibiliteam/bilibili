@@ -13,8 +13,8 @@
 </template>
 
 <script>
-  import Swiper from 'swiper'
   import '../../static/css/swiper.min.css'
+import Swiper from 'swiper'
 export default {
   data () {
     return {
@@ -35,8 +35,8 @@ export default {
               autoplay: 3000,
               paginationClickable: true,
               autoplayDisableOninteraction:false
-          });
-      }, 1000)
+          })
+      }, 5000)
   }
 
 

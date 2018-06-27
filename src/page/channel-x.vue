@@ -31,11 +31,9 @@
       <div class="channelSome clearfix">
         <a v-for="(item,index) of channelAll" class="fl" :href="item.routerLink" ><i :class="item.icon"></i><span v-text="item.name"></span></a>
       </div>
-
     </div>
     <xIndexBottom class="footer"></xIndexBottom>
   </div>
-
 </template>
 
 <script>
@@ -190,9 +188,7 @@
   display:flex;
   flex-direction:column;
   height:100%;
-  .header{
-    height: 50px;
-  }
+
   .footer{
     height: 50px;
 }
@@ -288,3 +284,6 @@
 }
 </style>
 
+<style scoped>
+
+</style>

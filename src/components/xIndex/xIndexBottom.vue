@@ -1,20 +1,54 @@
 <template>
     <div id="xIndexBottom" class="bg-fff">
-      <span><i class="iconfont icon-shouye"></i><a href="#/">首页</a></span>
-      <span><i class="iconfont icon-changyongfenlei"></i><a href="#/channel">频道</a></span>
-      <span><i class="iconfont icon-dongtaiweixuanzhong"></i><a href="">动态</a></span>
-      <span><i class="iconfont icon-gouwudai"></i><a href="">会员购</a></span>
+      <span v-for="(item,index) of xIndexBottomItem"  @click="changeIndex(index)" :class="{active:currentIndex===index}"><i :class="item.icon"></i><a :href="item.routerLink" v-text="item.name"></a></span>
     </div>
 </template>
 
 <script>
     export default {
-        name: ""
+        data(){
+          return{
+            xIndexBottomItem:[
+              {
+                name:'首页',
+                routerLink:'#/',
+                icon:'iconfont icon-shouye'
+              },
+              {
+                name:'频道',
+                routerLink:'#/channel',
+                icon:'iconfont icon-changyongfenlei'
+              },
+              {
+                name:'动态',
+                routerLink:'#/dongtai',
+                icon:'iconfont icon-dongtaiweixuanzhong'
+              },
+              {
+                name:'会员购',
+                routerLink:'#/vipshopping',
+                icon:'iconfont icon-gouwudai'
+              },
+            ],
+            currentIndex:1
+          }
+
+        },
+        methods:{
+            changeIndex(index){
+              this.currentIndex = index;
+              console.log(index,this.currentIndex)
+            }
+        }
     }
 </script>
 
 <style scoped lang="scss">
 #xIndexBottom{
+  .active{
+    color:#F15C8D;
+  }
+  width:100%;
   align-items: center;
   display:flex;
   height:50px;
