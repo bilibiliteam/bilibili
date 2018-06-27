@@ -7,6 +7,8 @@ import vipshopping from '../page/vipshopping'
 import dongtai from '../page/dongtai'
 import tuijian from '../components/tuijian/tuijian'
 import zhibo from '../components/zhibo/zhibo'
+import zhuifan from '../components/zhuifan/zhuifan'
+
 
 
 Vue.use(Router)
@@ -32,6 +34,11 @@ export default new Router({
           path: 'tuijian',
           name: 'tuijian',
           component: tuijian
+        },
+        {
+          path: 'zhuifan',
+          name: 'zhuifan',
+          component: zhuifan
         },
       ]
     },
