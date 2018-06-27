@@ -25,7 +25,7 @@
             </div>
             <div class="list">
                 <div class="lists1 lists0">
-                    <div class="li" v-for="item in lists1">
+                    <div class="li" v-for="(item,idx) in lists1" :class="{active:idx===curLi}">
                         <div class="icon-box">
                             <i class="iconfont" :class="item.icon"></i>
                         </div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="lists2 lists0">
-                    <div class="li" v-for="item in lists2">
+                    <div class="li" v-for="(item,idx) in lists2">
                         <div class="icon-box">
                             <i class="iconfont" :class="item.icon"></i>
                         </div>
@@ -135,7 +135,8 @@
                         icon: 'icon-54',
                         name: '联系客服'
                     }
-                ]
+                ],
+                curLi: 0
             }
         },
         methods: {
@@ -218,6 +219,9 @@
         flex-direction: column;
         justify-content: space-around;
         border-bottom: 1px solid #ccc;
+    }
+    .siderbar .leftCon .list .lists0 .active{
+        color: #fb7299;
     }
     .siderbar .leftCon .list .lists1{
         height: 300px;
