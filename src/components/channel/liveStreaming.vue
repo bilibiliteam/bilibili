@@ -1,9 +1,12 @@
 <template>
   <div id="livStreaming">
-    <homeheader></homeheader>
+    <homeheader class="homeheader"></homeheader>
     <tabNav class="tabNav"></tabNav>
-    <homeBanner></homeBanner>
-    <channelCommon></channelCommon>
+    <div class="liveStreamingBody">
+      <homeBanner></homeBanner>
+      <channelCommon></channelCommon>
+      <channelCommon></channelCommon>
+    </div>
   </div>
 </template>
 
@@ -23,8 +26,22 @@
 </script>
 
 <style scoped>
+  #livStreaming{
+    display:flex;
+    flex-direction: column;
+    overflow-x:hidden;
+
+
+  }
   .tabNav{
     background: #F15C8D !important;
     color:#eee;
+    height: 30px;
+  }
+  .homeheader{
+    height: 10%;
+  }
+  .liveStreamingBody{
+    flex:1;
   }
 </style>

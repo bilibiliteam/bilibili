@@ -1,7 +1,7 @@
 <template>
     <div id="xIndexCommon" class="bg-fff">
         <div class="xIndexCommonHead">
-          <h3 class="clearfix"><span class="fl"><i class="iconfont icon-smartphone"></i>手游</span><a href="" class="fr"><i class="iconfont icon-msnui-bar-chart"></i>排行榜</a></h3>
+          <h3 class="clearfix"><span class="fl"><i class="iconfont icon-smartphone"></i>综合</span><a href="" class="fr"><i class="iconfont icon-msnui-bar-chart"></i>排行榜</a></h3>
         </div>
         <div class="xIndexCommonBody clearfix">
           <a href="" v-for="(item,index) of items" class="fl">
@@ -31,20 +31,20 @@
           return{
             items:[
               {
-                src:"../../../static/imgs/7ec11ac897901cb826f34358a883416734fd5d33.jpg",
-                title:"【梗百科51】B站暑假又办了漫展？！请自带基友和女装入场！",
+                src:"../../../static/imgs/tuijiancommon1.jpg",
+                title:"【手绘ED/应援手书】魔卡少女樱透明牌篇【木之本樱/CLAMP】",
               },
               {
-                src:"../../../static/imgs/7ec11ac897901cb826f34358a883416734fd5d33.jpg",
-                title:"【梗百科51】B站暑假又办了漫展？！请自带基友和女装入场！",
+                src:"../../../static/imgs/tuijiancommon2.jpg",
+                title:"【手绘OP】我的英雄学院+斩服少女!!",
               },
               {
-                src:"../../../static/imgs/7ec11ac897901cb826f34358a883416734fd5d33.jpg",
-                title:"【梗百科51】B站暑假又办了漫展？！请自带基友和女装入场！",
+                src:"../../../static/imgs/tuijiancommon3.jpg",
+                title:"【崩坏3】魔族君王？吸血鬼？我德莉莎大魔王让你见识一下什么叫暴力萝莉！",
               },
               {
-                src:"../../../static/imgs/7ec11ac897901cb826f34358a883416734fd5d33.jpg",
-                title:"【梗百科51】B站暑假又办了漫展？！请自带基友和女装入场！",
+                src:"../../../static/imgs/tuijiancommon4.jpg",
+                title:"【神威鬼鸣】学猫叫【翻唱】",
               },
             ]
           }
@@ -69,7 +69,7 @@
         }
 
         a{
-          color:orange;
+          color: orange;
           font-size: 16px;
           i{
             font-size: 20px;
@@ -90,8 +90,10 @@
         position:relative;
         font-size:0;
         margin-bottom:5px;
+        height: 98px;
         img{
           width: 100%;
+          height: 100%;
           border-radius: 10px;
         }
         .itemInformation{

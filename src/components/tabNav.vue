@@ -1,7 +1,7 @@
 <template>
 <div id="tabNav">
   <ul class="tabNav">
-    <li v-for="(item,index) in tabNav" @click="clickNav(index)" :class="{active:idx===index}"><a>{{item}}</a></li>
+    <li v-for="(item,index) in tabNav" @click="clickNav(index)" :class="{active:idx===index}"><a :href="item.href">{{item.name}}</a></li>
   </ul>
 </div>
 
@@ -12,7 +12,7 @@ export default {
   data(){
     return {
       idx:0,
-      tabNav:["直播","推荐","追番","萌战","干杯！世界杯"]
+      tabNav:[{name:"直播",href:'#/zhibo'},{name:"推荐",href:'#/tuijian'},{name:"追番",href:'#/zhuifan'},{name:"萌战",href:'#/mengzhan'},{name:"干杯！世界杯",href:'#/shijiebei'}],
     }
   },
   methods:{
@@ -47,9 +47,15 @@ export default {
   padding: 0 5px;
   font-size: 12px;
 }
+#tabNav .tabNav li a{
+  color: #333;
+}
 #tabNav .tabNav li.active{
   color: #F15C8D;
   border-bottom: 2px solid #F15C8D;
+}
+#tabNav .tabNav li.active a{
+  color: #F15C8D;
 }
 
 </style>

@@ -2,8 +2,9 @@
     <div class="page">
       <homeheader />
       <tabNav />
-      <homeBanner />
-      <xIndexCommon></xIndexCommon>
+      <div class="home-body">
+        <router-view></router-view>
+      </div>
       <xIndexBottom class="indexFooter"></xIndexBottom>
       <siderBar />
     </div>
@@ -29,8 +30,9 @@
           this.$store.state.idxLight = 0;
         }
     }
-</script>
 
+</script>
+  
 <style>
   .indexFooter{
     position:fixed;

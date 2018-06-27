@@ -14,33 +14,31 @@
 
 <script>
   import '../../static/css/swiper.min.css'
-import Swiper from 'swiper'
-export default {
-  data () {
-    return {
-      imgUrl:[
-      "../../static/imgs/homeBanner1.jpg",
-      "../../static/imgs/homeBanner2.jpg",
-      "../../static/imgs/homeBanner3.jpg",
-      "../../static/imgs/homeBanner4.jpg",
-      "../../static/imgs/homeBanner5.jpg"
-      ]
-    }
-  },
-  mounted() {
+  import Swiper from 'swiper'
+  export default {
+    data () {
+      return {
+        imgUrl: [
+          "../../static/imgs/homeBanner1.jpg",
+          "../../static/imgs/homeBanner2.jpg",
+          "../../static/imgs/homeBanner3.jpg",
+          "../../static/imgs/homeBanner4.jpg",
+          "../../static/imgs/homeBanner5.jpg"
+        ]
+      }
+    },
+    mounted() {
       setTimeout(function () {
           var swiperObj =  new Swiper('#swiper', {
               loop: true,
-              pagination: '.swiper-pagination',
-              autoplay: 3000,
-              paginationClickable: true,
-              autoplayDisableOninteraction:false
+              pagination: {
+                el: '.swiper-pagination'
+              },
+              autoplay: true,
           })
-      }, 2000)
+      }, 1000)
+    }
   }
-
-
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
