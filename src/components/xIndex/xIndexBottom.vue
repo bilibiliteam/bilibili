@@ -1,6 +1,6 @@
 <template>
     <div id="xIndexBottom" class="bg-fff">
-      <span v-for="(item,index) of xIndexBottomItem"  @click="changeIndex(index)" :class="{active:currentIndex===index}"><i :class="item.icon"></i><a :href="item.routerLink" v-text="item.name"></a></span>
+      <a v-for="(item,index) of xIndexBottomItem"  :href="item.routerLink" @click="changeIndex(index)" :class="{active:currentIndex===index}"><i :class="item.icon"></i><span v-text="item.name"></span></a>
     </div>
 </template>
 
@@ -48,21 +48,22 @@
   .active{
     color:#F15C8D;
   }
-  width:100%;
-  align-items: center;
-  display:flex;
-  height:50px;
-  bottom:0;
-  left:0;
-  width:100%;
-border-top:1px solid #eee;
-  span{
+
+    width:100%;
+    align-items: center;
+    display:flex;
+    height:50px;
+    bottom:0;
+    left:0;
+    width:100%;
+    border-top:1px solid #eee;
+  a{
     flex:1;
     display: flex;
     flex-direction: column;
     text-align: center;
     color:#999;
-    a{
+    span{
           font-size: 12px;
       color:#999;
 
