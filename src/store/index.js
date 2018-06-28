@@ -8,7 +8,8 @@ export default new Vuex.Store({
   state: {
     count: 0,
     left: '-100%',
-    idxLight:0
+    idxLight:0,
+    tabNavLight: 0,
   },
   mutations: {
     increment (state) {

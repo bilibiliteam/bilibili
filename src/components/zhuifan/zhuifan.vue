@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="zf-content">
         <zhuifanTop />
         <zhuifanContent />
     </div>
@@ -17,4 +17,5 @@
     }
 </script>
 
-<style></style>
+<style>
+</style>
