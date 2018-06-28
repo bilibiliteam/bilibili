@@ -6,7 +6,7 @@
                     <div>
                         <img :src="item.imgSrc" alt="" />
                     </div>
-                    <p>{{item.itemName}}</p>
+                    <p class="top-title">{{item.itemName}}</p>
                 </div>
                 <div class="right">
                     <p>{{item.more}} &gt;</p>
@@ -67,8 +67,16 @@
             </div>
         </div>
         <div class="bjtj">
-            <div class="bjtj-top">
-                
+            <div class="bjtj-title">
+                <div class="pic">
+                    <img :src="bjtjSrc" alt="" />
+                </div>
+                <div class="title">编辑推荐</div>
+            </div>
+            <div class="bjtj-content" v-for="item in bjtjData">
+                <img :src="item.imgSrc" alt="" />
+                <p class="content-title">{{item.title}}</p>
+                <p class="content-text">{{item.text}}</p>
             </div>
         </div>
     </div>
@@ -166,6 +174,25 @@
                         commentNums: 101
                     }
                 ],
+                bjtjSrc: '../../static/imgs/zhuifan-bjtj-toppic.jpg',
+                bjtjData: [
+                    {
+                        imgSrc: '../../static/imgs/zhuifan-bjtj-list1.jpg',
+                        title: '缘之一字，聚散离合',
+                        text: '爱恨痴情，缘起缘灭，狐妖小红娘的故事将告一段落。'
+                    },
+                    {
+                        imgSrc: '../../static/imgs/zhuifan-bjtj-list2.jpg',
+                        title: '一家之主',
+                        text: '荒诞中的真实'
+                    },
+                    {
+                        imgSrc: '../../static/imgs/zhuifan-bjtj-list3.jpg',
+                        title: '【泡面档】 任性HighSpec',
+                        text: '我！任性！'
+                    }
+
+                ]
 
             }
         }
@@ -184,13 +211,15 @@
                 justify-content: space-between;
                 .left{
                     display: flex;
-                    justify-content: space-around;
                     align-items: center;
                     padding-left: 5px;
-                    width: 28%;
+                    width: 36%;
                     color: #333;
                     img{
                         width: 26px;
+                    }
+                    .top-title{
+                        padding-left: 5px;
                     }
                 }
                 .right{
@@ -285,6 +314,7 @@
                             display: -webkit-box;
                             -webkit-line-clamp: 2;
                             -webkit-box-orient: vertical;
+                            color: #888;
                         }
                     }
                     .t-right{
@@ -324,6 +354,56 @@
                             flex: 1;
                         }
                     }
+                }
+            }
+        }
+        .bjtj{
+            background: #fff;
+            padding: 0 2%;
+            font-size: 14px;
+            .bjtj-title{
+                height: 40px;
+                display: flex;
+                align-items: center;
+                .pic{
+                    img{
+                        width: 24px;
+                    }
+                }
+                .title{
+                    color: #333;
+                    padding-left: 5px;
+                }
+            }
+            .bjtj-content{
+                padding-bottom: 10px;
+                img{
+                    width: 100%;
+                }
+                p{
+                    background: #f5f5f5;
+                    padding-left: 12px;
+                }
+                .content-title{
+                    height: 30px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                }
+                .content-text{
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #888;
+                    padding-bottom: 5px;
+                    max-height: 40px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
                 }
             }
         }

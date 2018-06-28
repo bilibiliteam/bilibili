@@ -42,5 +42,6 @@
   .home-body{
         flex: 1;
         overflow-x: hidden;
+        font-size: 14px;
     }
 </style>
