@@ -9,7 +9,9 @@ import goodsClass from '../page/vipPage/goodsClass'
 import tuijian from '../components/tuijian/tuijian'
 import zhibo from '../components/zhibo/zhibo'
 import zhuifan from '../components/zhuifan/zhuifan'
-
+import video from '../page/videoPage'
+import videoIntro from '../components/video/videxIntro'
+import videoComment from '../components/video/videoComment'
 
 
 Vue.use(Router)
@@ -40,7 +42,7 @@ export default new Router({
           path: 'zhuifan',
           name: 'zhuifan',
           component: zhuifan
-        },
+        }
       ]
     },
     {
@@ -67,6 +69,24 @@ export default new Router({
       path: '/goodsClass',
       name: 'goodsClass',
       component: goodsClass
+    },
+    {
+      path: '/video',
+      name: 'video',
+      component: video,
+      children:[{
+        path: '',
+        name: 'videoIntro',
+        component: videoIntro
+      },{
+        path: 'videoIntro',
+        name: 'videoIntro',
+        component: videoIntro
+      },{
+        path: 'videoComment',
+        name: 'videoComment',
+        component: videoComment
+      }]
     }
   ]
 })

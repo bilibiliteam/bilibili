@@ -12,7 +12,9 @@
             </div>
             <div class="my-center">
                 <div class="centerList" v-for="iData in myzfData">
-                    <img :src="iData.imgSrc" alt="" />
+                    <a href="#/video">
+                        <img :src="iData.imgSrc" alt="" />
+                    </a>
                     <p class="videoname">{{iData.videoname}}</p>
                     <p class="allNum same">{{iData.allNum}}</p>
                     <p class="curNum same">{{iData.curNum}}</p>

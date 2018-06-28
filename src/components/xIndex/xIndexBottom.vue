@@ -1,6 +1,6 @@
 <template>
     <div id="xIndexBottom" class="bg-fff">
-      <a v-for="(item,index) of xIndexBottomItem"  :href="item.routerLink" @click="changeIndex(index)" :class="{active:whoIdx===index}"><i :class="item.icon"></i><span v-text="item.name"></span></a>
+      <a v-for="(item,index) of xIndexBottomItem"  :href="item.routerLink" @click="changeIndex(index)" :class="{active:whoIdx===index}"><i :class="item.icon"></i><span v-text="item.name" :class="{active:whoIdx===index}"></span></a>
 
     </div>
 </template>

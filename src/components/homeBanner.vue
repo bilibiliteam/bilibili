@@ -34,7 +34,7 @@
               pagination: {
                 el: '.swiper-pagination'
               },
-              autoplay: true,
+              autoplay: 4000,
           })
       }, 1000)
     }
