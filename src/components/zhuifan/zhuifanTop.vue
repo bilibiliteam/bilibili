@@ -65,8 +65,9 @@
                     width: 18%;
                 }
                 p{
+                    width:50%;    
                     padding-left: 6%;
-                    line-height: 40px;
+                    height: 22px;
                 }
             }
         }
