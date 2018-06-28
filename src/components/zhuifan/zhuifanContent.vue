@@ -12,15 +12,9 @@
                     <p>{{item.more}} &gt;</p>
                 </div>
             </div>
-            <div class="my-center">
-                <div class="centerList" v-for="iData in item.itmData">
-                    <a href="#/video">
-                        <img :src="iData.imgSrc" alt="" />
-                    </a>
-                </div>
             <div class="block-center">
                 <div class="centerList" v-for="iData in item.itmData">
-                    <img :src="iData.imgSrc" alt="" />
+                    <a href="#/video"><img :src="iData.imgSrc" alt="" /></a>
                     <p class="videoname">{{iData.videoname}}</p>
                     <p class="allNum same">{{iData.allNum}}</p>
                     <p class="curNum same">{{iData.curNum}}</p>
@@ -30,7 +24,6 @@
                 <img :src="item.btImg" alt="" />
                 <p class="title">{{item.title}}</p>
                 <p class="jianjie">{{item.jianjie}}</p>
-            </div>
             </div>
         </div>
         <div class="dptj block-all">
