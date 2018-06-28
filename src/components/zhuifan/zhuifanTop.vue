@@ -42,6 +42,7 @@
         margin-bottom: 6px;
         background: #fff;
         color: #777;
+        font-size: 14px;
         .fanju-or-gz{
             padding: 0 4%;
             height:80px;
@@ -65,8 +66,9 @@
                     width: 18%;
                 }
                 p{
+                    width:50%;    
                     padding-left: 6%;
-                    line-height: 40px;
+                    height: 22px;
                 }
             }
         }

@@ -1,7 +1,7 @@
 <template>
 <div id="tabNav">
   <ul class="tabNav">
-    <li v-for="(item,index) in tabNav" @click="clickNav(index)" :class="{active:idx===index}"><a :href="item.href">{{item.name}}</a></li>
+    <li v-for="(item,index) in tabNav" @click="clickNav(index)" :class="{active:curIdx===index}"><a :href="item.href">{{item.name}}</a></li>
   </ul>
 </div>
 
@@ -15,9 +15,14 @@ export default {
       tabNav:[{name:"直播",href:'#/zhibo'},{name:"推荐",href:'#/tuijian'},{name:"追番",href:'#/zhuifan'},{name:"萌战",href:'#/mengzhan'},{name:"干杯！世界杯",href:'#/shijiebei'}],
     }
   },
+  computed: {
+    curIdx(){
+      return this.$store.state.tabNavLight;
+    }
+  },
   methods:{
     clickNav(index){
-      this.idx=index
+      this.$store.state.tabNavLight = index;
     }
   }
 }

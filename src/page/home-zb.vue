@@ -34,15 +34,14 @@
 </script>
   
 <style>
-  .indexFooter{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width: 100%;
-  }
   .page{
         height: 100%;
         display: flex;
         flex-direction: column;
+    }
+  .home-body{
+        flex: 1;
+        overflow-x: hidden;
+        font-size: 14px;
     }
 </style>
