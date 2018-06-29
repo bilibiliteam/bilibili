@@ -32,7 +32,7 @@
             margin: 0 2%;
             border-radius: 10px;
             background: #fff;
-            box-shadow: 0px 1px 0 0px #ccc;
+            box-shadow: 0px 1px 1px 0px #ccc;
             img{
                 width: 100%;
                 border-radius: 5px;
