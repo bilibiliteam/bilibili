@@ -149,7 +149,7 @@
                     {
                         title: '致这残酷美丽的世界',
                         content: '灰与幻想的格林加姆尔，一个残酷而美丽的世界。一如既往的穿越，一如既往的异世界，一如既往的公会',
-                        imgSrc: 'https://i0.hdslb.com/bfs/bangumi/7fb4945f864e9e988212b7d20f206df2677053f8.jpg@180w_240h.webp',
+                        imgSrc: '../../static/imgs/zhuifan-dptj-list1.png',
                         writePic: '../../static/imgs/zhuifan-dptj-user1.jpg',
                         name: 'MHZJX',
                         likeNums: 906,
@@ -158,7 +158,7 @@
                     {
                         title: '致这残酷美丽的世界',
                         content: '灰与幻想的格林加姆尔，一个残酷而美丽的世界。一如既往的穿越，一如既往的异世界，一如既往的公会',
-                        imgSrc: 'https://i0.hdslb.com/bfs/bangumi/7fb4945f864e9e988212b7d20f206df2677053f8.jpg@180w_240h.webp',
+                        imgSrc: '../../static/imgs/zhuifan-dptj-list1.png',
                         writePic: '../../static/imgs/zhuifan-dptj-user1.jpg',
                         name: 'MHZJX',
                         likeNums: 906,
@@ -167,7 +167,7 @@
                     {
                         title: '致这残酷美丽的世界',
                         content: '灰与幻想的格林加姆尔，一个残酷而美丽的世界。一如既往的穿越，一如既往的异世界，一如既往的公会',
-                        imgSrc: 'https://i0.hdslb.com/bfs/bangumi/7fb4945f864e9e988212b7d20f206df2677053f8.jpg@180w_240h.webp',
+                        imgSrc: '../../static/imgs/zhuifan-dptj-list1.png',
                         writePic: '../../static/imgs/zhuifan-dptj-user1.jpg',
                         name: 'MHZJX',
                         likeNums: 906,
