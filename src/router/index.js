@@ -12,6 +12,8 @@ import zhuifan from '../components/zhuifan/zhuifan'
 import video from '../page/videoPage'
 import videoIntro from '../components/video/videxIntro'
 import videoComment from '../components/video/videoComment'
+//首页第四个子页面
+import homePage4 from '../components/homepage4/homepage4'
 
 
 Vue.use(Router)
@@ -42,6 +44,11 @@ export default new Router({
           path: 'zhuifan',
           name: 'zhuifan',
           component: zhuifan
+        },
+        {
+          path: 'homePage4',
+          name: 'homePage4',
+          component: homePage4
         }
       ]
     },

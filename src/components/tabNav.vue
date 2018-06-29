@@ -12,7 +12,7 @@ export default {
   data(){
     return {
       idx:0,
-      tabNav:[{name:"直播",href:'#/zhibo'},{name:"推荐",href:'#/tuijian'},{name:"追番",href:'#/zhuifan'},{name:"萌战",href:'#/mengzhan'},{name:"干杯！世界杯",href:'#/shijiebei'}],
+      tabNav:[{name:"直播",href:'#/zhibo'},{name:"推荐",href:'#/tuijian'},{name:"追番",href:'#/zhuifan'},{name:"萌战",href:'#/homePage4'},{name:"干杯！世界杯",href:'#/shijiebei'}],
     }
   },
   computed: {
