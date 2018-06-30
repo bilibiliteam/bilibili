@@ -15,7 +15,7 @@
     import xIndexBottom from '../components/xIndex/xIndexBottom'
     import xIndexCommon from '../components/xIndex/xIndexCommon'
     import homeBanner from '../components/homeBanner'
-    import tabNav from '../components/tabNav'
+    import tabNav from '../components/channel/tabNav'
     import siderBar from '../components/sidebar'
     export default {
         components: {
@@ -32,7 +32,7 @@
     }
 
 </script>
-  
+
 <style>
   .page{
         height: 100%;

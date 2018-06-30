@@ -5,6 +5,11 @@ import channel from '../page/channel-x'
 import liveStreaming from '../components/channel/liveStreaming'
 import vipshopping from '../page/vipshopping'
 import dongtai from '../page/dongtai'
+//liveStreamingRouter
+import recommend from '../components/channel/liveStreamingRouter/recommend'
+import completionAnimation from '../components/channel/liveStreamingRouter/completionAnimation'
+import playerRoom from '../components/channel/liveStreamingRouter/playerRoom'
+import zhiboRecommend from '@/components/channel/channelAllRouter/zhiboRecommend'
 import goodsClass from '../page/vipPage/goodsClass'
 import tuijian from '../components/tuijian/tuijian'
 import zhibo from '../components/zhibo/zhibo'
@@ -67,7 +72,29 @@ export default new Router({
     {
       path: '/channel/liveStreaming',
       name: 'liveStreaming',
-      component: liveStreaming
+      component: liveStreaming,
+      children: [
+        {
+          path: '/channel/liveStreaming/zhiboRecommend',
+          name: 'zhiboRecommend',
+          component: zhiboRecommend
+        },
+        {
+          path: '/channel/liveStreaming/recommend',
+          name: 'recommend',
+          component: recommend
+        },
+        {
+          path: '/channel/liveStreaming/completionAnimation',
+          name: 'completionAnimation',
+          component: completionAnimation
+        },
+        {
+          path: '/channel/liveStreaming/playerRoom',
+          name: 'playerRoom',
+          component: playerRoom
+        }
+      ]
     },
     {
       path: '/vipshopping',
@@ -88,15 +115,15 @@ export default new Router({
       path: '/video',
       name: 'video',
       component: video,
-      children:[{
+      children: [{
         path: '',
         name: 'videoIntro',
         component: videoIntro
-      },{
+      }, {
         path: 'videoIntro',
         name: 'videoIntro',
         component: videoIntro
-      },{
+      }, {
         path: 'videoComment',
         name: 'videoComment',
         component: videoComment
