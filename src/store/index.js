@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     count: 0,
     left: '-100%',
+    right: '-100%',
     currentIndex: 0,
     changeChannelName: '番剧',
     changeChannelItem: ['推荐', '连载动画', '完结动画', '资讯', '官方延伸'],

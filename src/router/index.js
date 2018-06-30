@@ -11,6 +11,7 @@ import completionAnimation from '../components/channel/liveStreamingRouter/compl
 import playerRoom from '../components/channel/liveStreamingRouter/playerRoom'
 import zhiboRecommend from '@/components/channel/channelAllRouter/zhiboRecommend'
 import goodsClass from '../page/vipPage/goodsClass'
+import handPlay from '../page/vipPage/handPlay'
 import tuijian from '../components/tuijian/tuijian'
 import zhibo from '../components/zhibo/zhibo'
 import zhuifan from '../components/zhuifan/zhuifan'
@@ -110,6 +111,11 @@ export default new Router({
       path: '/goodsClass',
       name: 'goodsClass',
       component: goodsClass
+    },
+    {
+      path: '/handPlay',
+      name: 'handPlay',
+      component: handPlay
     },
     {
       path: '/video',

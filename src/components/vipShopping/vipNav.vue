@@ -2,10 +2,10 @@
   <div id="vipNav">
     <div class="vipNav bg-fff">
       <div class="lei">
-
-        <div><i class="iconfont icon-shangpin-" style="color: #EFDF8E;"></i></div>
-        <span>手办模玩</span>
-
+        <a href="#/handPlay">
+          <div><i class="iconfont icon-shangpin-" style="color: #EFDF8E;"></i></div>
+          <span>手办模玩</span>
+        </a>
       </div>
       <div class="lei">
 
