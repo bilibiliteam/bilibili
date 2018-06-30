@@ -28,7 +28,7 @@
         },
         mounted(){
           this.$store.state.idxLight = 0;
-        }
+        },
     }
 
 </script>
