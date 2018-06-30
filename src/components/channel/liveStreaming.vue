@@ -1,47 +1,38 @@
 <template>
   <div id="livStreaming">
-    <homeheader class="homeheader"></homeheader>
-    <tabNav class="tabNav"></tabNav>
+    <div class="liveStreamingHead">
+      <channelHeader class="homeheader"></channelHeader>
+      <tabNav class="tabNav"></tabNav>
+    </div>
     <div class="liveStreamingBody">
-      <homeBanner></homeBanner>
-      <channelCommon></channelCommon>
-      <channelCommon></channelCommon>
+        <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
     import tabNav from '@/components/tabNav'
-    import homeheader from '@/components/homeheader'
-    import homeBanner from '@/components/homeBanner'
-    import channelCommon from '@/components/channel/channelCommon'
+    import channelHeader from './channelHeader'
     export default {
         components:{
           tabNav,
-          homeheader,
-          homeBanner,
-          channelCommon
+          channelHeader,
         },
+      data(){
+          return {
+            livStreamingItem:[
+              {
+                name:"直播",
+                tabNavItem:['推荐','娱乐',"手游","游戏","绘画","精彩轮播"]
+              }
+            ]
+          }
+      }
     }
 </script>
 
 <style scoped>
-  #livStreaming{
-    display:flex;
-    flex-direction: column;
-    overflow-x:hidden;
-
-
-  }
   .tabNav{
-    background: #F15C8D !important;
-    color:#eee;
-    height: 30px;
-  }
-  .homeheader{
-    height: 10%;
-  }
-  .liveStreamingBody{
-    flex:1;
+    width:auto;
   }
 </style>

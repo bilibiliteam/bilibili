@@ -1,6 +1,6 @@
 <template>
     <div id="xIndexBottom" class="bg-fff">
-      <a v-for="(item,index) of xIndexBottomItem"  :href="item.routerLink" @click="changeIndex(index)" :class="{active:currentIndex===index}"><i :class="item.icon"></i><span v-text="item.name"></span></a>
+      <a v-for="(item,index) of xIndexBottomItem"  :href="item.routerLink" @click="changeIndex(index)" :class="{active:computedIndex===index}"><i :class="item.icon"></i><span v-text="item.name"></span></a>
     </div>
 </template>
 
@@ -36,9 +36,14 @@
         },
         methods:{
             changeIndex(index){
-              this.currentIndex = index;
-              console.log(index,this.currentIndex)
+              this.$store.state.currentIndex = index;
+              console.log(this.$store.state.currentIndex)
             }
+        },
+        computed:{
+          computedIndex(){
+            return this.$store.state.currentIndex;
+          }
         }
     }
 </script>
