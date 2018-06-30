@@ -6,6 +6,7 @@
 </template>
 
 <script>
+	import $ from '../../../static/lib/jquery-3.3.1'
     export default {
         data(){
             return {
@@ -13,6 +14,7 @@
             }
         }
     }
+    $("input").trigger("click").focus();
 </script>
 
 <style scoped>

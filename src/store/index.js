@@ -34,7 +34,9 @@ export default new Vuex.Store({
       'Fate/stay night',
       'DARLING in the FRANX'],
     changeRankItem: ['默认排序', '最新视频', '播放最多', '评论最多', '弹幕最多', '收藏最多'],
-    changeChannelAnimationItem: []
+    changeChannelAnimationItem: [],
+    idxLight: 0,
+    tabNavLight: 0
   },
   mutations: {
     increment (state) {

@@ -13,7 +13,7 @@
         <xIndexBottom class="indexFooter"></xIndexBottom>
       </div>
       
-      
+      <siderBar />
       
     </div>
 </template>
@@ -25,6 +25,7 @@ import vipsearch from '../components/vipShopping/vipsearch'
 import vipNav from '../components/vipShopping/vipNav'
 import vipContent from '../components/vipShopping/vipContent'
 import xIndexBottom from '../components/xIndex/xIndexBottom'
+import siderBar from '../components/sidebar'
 
 export default {
     components: {
@@ -33,8 +34,12 @@ export default {
       vipNav,
       vipContent,
       vipsearch,
-      xIndexBottom
-    }
+      xIndexBottom,
+      siderBar
+    },
+      mounted(){
+        this.$store.state.idxLight = 3;
+      }
 }
 </script>
 

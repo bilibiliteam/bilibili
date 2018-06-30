@@ -4,7 +4,7 @@
           <h3 class="clearfix"><span class="fl"><i class="iconfont icon-smartphone"></i>手游</span><a href="" class="fr"><i class="iconfont icon-msnui-bar-chart"></i>排行榜</a></h3>
         </div>
         <div class="xIndexCommonBody clearfix">
-          <a href="" v-for="(item,index) of items" class="fl">
+          <a href="#/video" v-for="(item,index) of items" class="fl">
             <div class="xIndexCommonBodyItem">
               <div class="xIndexCommonBodyItemTop">
                 <img :src="item.src" alt="">
@@ -83,7 +83,7 @@
   a{
     width: 50%;
     height: 25%;
-
+    color: #333;
       .xIndexCommonBodyItem{
         margin:0 10px 10px 0;
       .xIndexCommonBodyItemTop{
@@ -110,6 +110,10 @@
       }
       .xIndexCommonBodyItemBottom{
         font-size: 12px;
+        p{
+          height: 32px;
+          overflow: hidden;
+        }
       }
     }
   }

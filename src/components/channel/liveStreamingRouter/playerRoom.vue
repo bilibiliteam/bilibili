@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import tabNav from '@/components/tabNav'
+  import tabNav from '@/components/channel/tabNav'
   import channelHeader from '../channelHeader'
   import homeBanner from '@/components/homeBanner'
   export default {

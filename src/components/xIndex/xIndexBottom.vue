@@ -37,14 +37,18 @@
         methods:{
             changeIndex(index){
               this.$store.state.currentIndex = index;
-              console.log(this.$store.state.currentIndex)
+              // console.log(this.$store.state.currentIndex)
             }
         },
         computed:{
           computedIndex(){
             return this.$store.state.currentIndex;
-          }
-        }
+              // this.$store.state.idxLight = index;
+            },
+          // whoIdx(){
+          //   return this.$store.state.idxLight;
+          // }
+        },
     }
 </script>
 

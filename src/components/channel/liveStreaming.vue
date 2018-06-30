@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import tabNav from '@/components/tabNav'
+    import tabNav from '@/components/channel/tabNav'
     import channelHeader from './channelHeader'
     export default {
         components:{
