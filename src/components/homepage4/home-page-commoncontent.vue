@@ -9,7 +9,7 @@
                 <div class="list-top">
                     <img :src="item.listSrc" alt="" />
                     <div class="bottom-msg">
-                        <p class="left1"><i class="iconfont icon-liebiaodaohang_yingshi"></i> {{item.listBL1}}</p>
+                        <p class="left1"><i class="iconfont icon-boshiweb_bofangliang"></i> {{item.listBL1}}</p>
                         <p class="left2"><i class="iconfont icon-liuyan"></i> {{item.listBL2}}</p>
                         <p class="right">{{item.listBR}}</p>
                     </div>
@@ -70,6 +70,8 @@
                         p{
                             float: left;
                             padding: 0 5px 2px;
+                            background: rgba(0,0,0,0.3);
+                            border-radius: 3px;
                             .iconfont{
                                 font-size: 12px;
                             }
