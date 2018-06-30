@@ -19,6 +19,8 @@ import videoIntro from '../components/video/videxIntro'
 import videoComment from '../components/video/videoComment'
 //首页第四个子页面
 import homePage4 from '../components/homepage4/homepage4'
+//首页第五个子页面
+import homePage5 from '../components/homepage5/homepage5'
 
 
 Vue.use(Router)
@@ -54,6 +56,11 @@ export default new Router({
           path: 'homePage4',
           name: 'homePage4',
           component: homePage4
+        },
+        {
+          path: 'homePage5',
+          name: 'homePage5',
+          component: homePage5
         }
       ]
     },

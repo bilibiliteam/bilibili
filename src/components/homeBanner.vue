@@ -1,7 +1,7 @@
 <template>
 <div class="swiper-container" id="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="(img,idx) in imgUrl" :key="idx">
+      <div class="swiper-slide" v-for="(img,idx) in bannerPic" :key="idx">
           <a>
               <img :src="img" alt="">
           </a>
@@ -18,15 +18,9 @@
   export default {
     data () {
       return {
-        imgUrl: [
-          "../../static/imgs/homeBanner1.jpg",
-          "../../static/imgs/homeBanner2.jpg",
-          "../../static/imgs/homeBanner3.jpg",
-          "../../static/imgs/homeBanner4.jpg",
-          "../../static/imgs/homeBanner5.jpg"
-        ]
       }
     },
+    props: ['bannerPic'],
     mounted() {
       setTimeout(function () {
           var swiperObj =  new Swiper('#swiper', {
@@ -34,7 +28,7 @@
               pagination: {
                 el: '.swiper-pagination'
               },
-              autoplay: 4000,
+              autoplay: true,
           })
       }, 1000)
     }
