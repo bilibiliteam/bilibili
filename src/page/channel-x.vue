@@ -1,6 +1,7 @@
 <template>
   <div id="channel" class="page">
     <homeHeader class="header"></homeHeader>
+    <siderBar></siderBar>
     <div class="channelBody">
       <div class="channelSome clearfix">
         <a v-for="(item,index) of channelSome" class="fl" :href="item.routerLink" @click="toChannel(index)" :channelId="item.id"><i :class="item.icon"></i><span v-text="item.name"></span></a>
@@ -24,10 +25,11 @@
 </template>
 
 <script>
-  import findchannel from '@/components/channel/channelAllRouter/findchannel'
+  import findchannel from '@/components/channel/channelAllRouter/findchannelCommon'
   import homeHeader from '@/components/homeheader'
   import xIndexBottom from '@/components/xIndex/xIndexBottom'
-    export default {
+  import siderBar from '../components/sidebar'
+  export default {
       data() {
         return {
           channelSome: [
@@ -35,7 +37,7 @@
               id: 1,
               name: '番剧',
               icon: 'iconfont icon-dianshiji color-orange',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '连载动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -47,7 +49,7 @@
               id: 2,
               name: '国创',
               icon: 'iconfont icon-guochandonghuatuijian color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '国产动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -59,7 +61,7 @@
               id: 3,
               name: '放映厅',
               icon: 'iconfont icon-zhibo color-yellow',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '纪录片', routerLink: '#/channel/liveStreaming/recommend'},
@@ -70,7 +72,7 @@
               id: 4,
               name: '记录片',
               icon: 'iconfont icon-jingyu color-skyblue',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '纪录片', routerLink: '#/channel/liveStreaming/recommend'},
@@ -81,7 +83,7 @@
               id: 5,
               name: '专栏',
               icon: 'iconfont icon-book color-skyblue',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -96,14 +98,14 @@
               id: 6,
               name: '音频',
               icon: 'iconfont icon-miao color-orange',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
             },
           ],
           channelAll: [
             {
               name: '直播',
               icon: 'iconfont icon--fangyingji color-skyblue',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/zhiboRecommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/zhiboRecommend'},
                 {name: '连载动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -114,7 +116,7 @@
             {
               name: '动画',
               icon: 'iconfont icon-boshiweb_bofangliang color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '短片·手书·配音', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -125,7 +127,7 @@
             {
               name: '音乐',
               icon: 'iconfont icon-tubiaozhizuomobanyihuifu- color-yellow',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '原创音乐', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -139,7 +141,7 @@
             {
               name: '舞蹈',
               icon: 'iconfont icon-fan color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '宅舞', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -150,7 +152,7 @@
             {
               name: '游戏',
               icon: 'iconfont icon-youxi color-green',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '单机游戏', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -165,7 +167,7 @@
             {
               name: '科技',
               icon: 'iconfont icon-ufo color-skyblue',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '趣味科普人文', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -179,7 +181,7 @@
             {
               name: '生活',
               icon: 'iconfont icon-miao color-orange',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '搞笑', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -194,7 +196,7 @@
             {
               name: '鬼畜',
               icon: 'iconfont icon-guixu color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '鬼畜调教', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -205,7 +207,7 @@
             {
               name: '时尚',
               icon: 'iconfont icon-shishang color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '美妆', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -227,7 +229,7 @@
             {
               name: '娱乐',
               icon: 'iconfont icon-yule color-orange',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '综艺', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -237,7 +239,7 @@
             {
               name: '影视',
               icon: 'iconfont icon-liebiaodaohang_yingshi color-skyblue',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '影视杂谈', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -249,7 +251,7 @@
             {
               name: '电影',
               icon: 'iconfont icon-dianying color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '华语电影', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -260,7 +262,7 @@
             {
               name: '电视剧',
               icon: 'iconfont icon-dianshiju color-orange',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '国产剧', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -269,7 +271,7 @@
             {
               name: '小视频',
               icon: 'iconfont icon-shipin color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '画友', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '摄影', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -278,7 +280,7 @@
             {
               name: '相簿',
               icon: 'iconfont icon-book color-green',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '连载动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -289,7 +291,7 @@
             {
               name: '会员购',
               icon: 'iconfont icon-gouwudai color-pink',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '连载动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -300,7 +302,7 @@
             {
               name: '游戏中心',
               icon: 'iconfont icon-94 color-orange',
-              routerLink: '#/channel/liveStreaming',
+              routerLink: '#/channel/liveStreaming/recommend',
               channelItem: [
                 {name: '推荐', routerLink: '#/channel/liveStreaming/recommend'},
                 {name: '连载动画', routerLink: '#/channel/liveStreaming/completionAnimation'},
@@ -314,7 +316,8 @@
       components: {
         homeHeader,
         xIndexBottom,
-        findchannel
+        findchannel,
+        siderBar
       },
       methods: {
         toChannel(index) {

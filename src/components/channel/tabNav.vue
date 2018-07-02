@@ -1,5 +1,5 @@
 <template>
-<div id="tabNav">
+<div id="tabNav" :class="{toFixed:fixedState}">
   <ul class="tabNav">
     <li v-for="(item,index) in tabNav" @click="clickNav(index)" :class="{active:idx===index}"><a :href="item.routerLink">{{item.name}}</a></li>
   </ul>
@@ -12,6 +12,7 @@
         return {
           idx:0,
           tabNav:this.$store.state.changeChannelItem,
+          fixedState:false,
           channelItemInfo:[
             {
               name:'连载动画',
@@ -418,7 +419,22 @@
           this.$store.state.changeChannelRankItem = this.channelItemInfo[index].rankItem;
           this.$store.state.changeChannelAnimationItem = this.channelItemInfo[index].animationItem;
         },
-    }
+        handleScroll(){
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+          var offsetTop = document.querySelector('#tabNav').offsetTop;
+          console.log(offsetTop);
+          if(scrollTop > offsetTop){
+            this.fixedState = true;
+          }else{
+            this.fixedState = false;
+          }
+
+        }
+
+    },
+      mounted(){
+        window.addEventListener('scroll',this.handleScroll)
+      }
     }
   </script>
 
@@ -433,6 +449,11 @@
   border-bottom: 1px solid #ccc;
   padding-left: 10px;
   padding-right: 10px;
+}
+.toFixed{
+  position:fixed;
+  top:0;
+  z-index: 3;
 }
 #tabNav .tabNav{
   display: flex;

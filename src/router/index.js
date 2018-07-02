@@ -21,7 +21,7 @@ import videoComment from '../components/video/videoComment'
 import homePage4 from '../components/homepage4/homepage4'
 //首页第五个子页面
 import homePage5 from '../components/homepage5/homepage5'
-
+import findchannel from '@/components/channel/channelAllRouter/findchannel'
 
 Vue.use(Router)
 
@@ -68,6 +68,11 @@ export default new Router({
       path: '/channel',
       name: 'channel',
       component: channel
+    },
+    {
+      path: '/channel/findchannel',
+      name: 'findchannel',
+      component: findchannel
     },
     {
       path: '/channel/liveStreaming',
