@@ -1,6 +1,5 @@
 <template>
     <div class="common-top">
-        <img class="common-top-t" :src="topImgSrc" alt="" />
         <div class="common-top-b">
             <img :src="topbImgSrc" alt="" />
             <p class="title">{{title}}</p>
@@ -24,10 +23,6 @@
 
 <style scoped lang="scss">
     .common-top{
-        .common-top-t{
-            width: 100%;
-            margin-bottom: -30px;
-        }
         .common-top-b{
             margin: 0 2%;
             border-radius: 10px;

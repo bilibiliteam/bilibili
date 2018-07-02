@@ -4,7 +4,7 @@
         <vipheader class="vipheader"/>
       </div>
       <div class="vipshoppingcontent">
-        <vipbanner style="z-index:0;"/>
+        <vipbanner style="z-index:0;" v-bind:bannerPic="imgUrl" />
         <vipsearch style="margin-top: -10px;"/>
         <vipNav />
         <vipContent />
@@ -28,6 +28,17 @@ import xIndexBottom from '../components/xIndex/xIndexBottom'
 import siderBar from '../components/sidebar'
 
 export default {
+    data () {
+      return {
+        imgUrl: [
+          "../../static/imgs/homeBanner1.jpg",
+          "../../static/imgs/homeBanner2.jpg",
+          "../../static/imgs/homeBanner3.jpg",
+          "../../static/imgs/homeBanner4.jpg",
+          "../../static/imgs/homeBanner5.jpg"
+        ]
+      }
+    },
     components: {
       vipheader,
       vipbanner,

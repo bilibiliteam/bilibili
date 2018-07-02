@@ -1,6 +1,6 @@
 <template>
 	<div id="searchHeader">
-		<div class="fanhui"><a @click="back">＜</a></div>
+		<div class="fanhui"><a href="#/vipshopping"><i class="iconfont icon-jiantou"></i></a></div>
 		<div class="search">
 			<i class="iconfont icon-fangdajing"></i>
 			<input type="text" placeholder="商品、品牌、作品名">
@@ -18,7 +18,7 @@
         },
         methods:{
         	back(){
-        		this.$router.go(-1);
+        		// this.$router.go(-1);
         	}
         }
     }
@@ -34,7 +34,14 @@
 		padding-left: 10px;
 		text-align: center;
 		font-size: 20px;
+		
+	}
+	.fanhui a{
 		color: #fff;
+	}
+	.fanhui a i{
+		color: #fff;
+		font-size: 25px;
 	}
 	.search{
 		width: 90%;

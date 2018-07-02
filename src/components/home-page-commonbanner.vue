@@ -1,6 +1,5 @@
 <template>
     <div class="common-top">
-        <img class="common-top-t" :src="imgSrc.topImgSrc" alt="" />
         <div class="common-top-b">
             <div class="swiper-container" id="swiper">
                 <div class="swiper-wrapper">
@@ -45,10 +44,7 @@
 
 <style scoped lang="scss">
     .common-top{
-        .common-top-t{
-            width: 100%;
-            margin-bottom: -30px;
-        }
+        margin-bottom: 15px;
         .common-top-b{
             margin: 0 2%;
             border-radius: 10px;
