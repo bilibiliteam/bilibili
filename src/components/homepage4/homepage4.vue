@@ -77,6 +77,8 @@
 
 <style scoped lang="scss">
     .page4-content{
-        background: #f5f5f5;
+        background:url('../../../static/imgs/home-page4-top1.jpg') no-repeat #f5f5f5;
+        background-size: contain;
+        padding-top: 190px;
     }
 </style>

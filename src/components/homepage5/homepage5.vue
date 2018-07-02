@@ -1,6 +1,9 @@
 <template>
-    <div>
+    <div class="page5-content">
+        <wenzhang v-bind:wenzhangData="wenzhangData" />
+        <wenzhang2 v-bind:wenzhang2Data="wenzhang2Data" />
         <pageTop v-bind:imgSrc="datas" />
+        <wenzhang2 v-bind:wenzhang2Data="wenzhang2Data2" />
         <pageContent v-bind:message="conDatas" />
     </div>
 </template>
@@ -8,6 +11,9 @@
 <script>
     import pageTop from '../home-page-commonbanner'
     import pageContent from '../homepage4/home-page-commoncontent'
+    import wenzhang from '../wenzhang'
+    import wenzhang2 from '../wenzhang2'
+
 
     export default {
         data () {
@@ -71,14 +77,43 @@
                             listSort: '布袋戏'
                         },
                     ]
+                },
+                wenzhangData: {
+                    title: '48年来首次！俄罗斯晋级世界杯8强！西班牙第5次不敌世界杯东道主',
+                    imgSrc: '../static/imgs/home-page5-top2.jpg',
+                    sortName: '文章',
+                    sort: '运动',
+                    author: '球叮足球',
+                    clickNum: 7346,
+                    commentNum: 150
+                },
+                wenzhang2Data: {
+                    imgSrc: '../static/imgs/home-page-top3.jpg',
+                    title: '欧洲红魔来势汹汹',
+                    sort: '竞猜',
+                    jianjie: '16强是否已经是蓝武士的极限？'
+                },
+                wenzhang2Data2: {
+                    imgSrc: '../static/imgs/ganbei-sjb.jpg',
+                    title: '《干杯！世界杯》专题报道',
+                    sort: '世界杯',
+                    jianjie: '点燃你的夏日激情'
                 }
             }
         },
         components: {
+            wenzhang,
             pageTop,
-            pageContent
+            pageContent,
+            wenzhang2
         }
     }
 </script>
 
-<style scpoed lang="scss"></style>
+<style scpoed lang="scss">
+    .page5-content{
+        background:url('../../../static/imgs/home-page5-top1.png') no-repeat #f5f5f5;
+        background-size: contain;
+        padding-top: 190px;
+    }
+</style>
