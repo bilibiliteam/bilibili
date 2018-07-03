@@ -33,11 +33,11 @@
 
 <style scoped lang="scss">
     .page-content{
-        padding: 10px 2% 0;
+        padding: 0px 2%;
         .con-top{
             display: flex;
             justify-content: space-between;
-            line-height: 40px;
+            line-height: 30px;
             .top-right{
                 font-size: 12px;
                 color: #888;
